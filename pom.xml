@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.3</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.animation</groupId>
+    <artifactId>OnlineWebsite</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>OnlineWebsite</name>
+    <description>OnlineWebsite</description>
+    <modules>
+        <module>UserManagementModule</module>
+        <module>SecurityAndAuthenticationModule</module>
+        <module>AnimationResourceModule</module>
+        <module>PerformanceOptimizationAndCachingModule</module>
+        <module>SocialInteractionModule</module>
+        <module>SearchAndFilterModule</module>
+        <module>MobileAdaptationModule</module>
+        <module>MonitoringAndLoggingModule</module>
+        <module>TestingAndDeploymentModule</module>
+        <module>UserExperienceModule</module>
+        <module>ComplianceAndLegalModule</module>
+    </modules>
+    <properties>
+        <java.version>20</java.version>
+    </properties>
+
+    <dependencies>
+        <!-- Spring Boot Web依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.1.3</version> <!-- 指定Spring Boot版本 -->
+        </dependency>
+
+        <!-- Spring Boot Data JPA依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>3.1.3</version> <!-- 指定Spring Boot版本 -->
+        </dependency>
+
+        <!-- 数据库依赖（例如MySQL） -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.27</version> <!-- 指定MySQL版本 -->
+        </dependency>
+
+        <!-- Spring Boot测试依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>3.1.3</version> <!-- 指定Spring Boot版本 -->
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Spring Boot DevTools依赖（开发工具，可选） -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <version>3.1.3</version> <!-- 指定Spring Boot版本 -->
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
