@@ -10,11 +10,12 @@ const props = defineProps({
   qwe: String,
 });
 
-const emit = defineEmits(['update:qqqq']);
+const emit = defineEmits(['update:qwe']);
 const testData=ref(props.qwe);
 
 const updateValue = (event) => {
   // 更新 xxx 的值，并通过 $emit 触发自定义事件 inputChange
-  emit('update:qqqq', event.target.value);
+  testData.value=event.target.value;
+  emit('update:qwe', event.target.value);
 }
 </script>
